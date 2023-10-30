@@ -36,14 +36,18 @@
     <!--Title of first section-->
     <h2>Input Validation Section</h2>
     <div>
+    <!--Login status with specific styling for location on form-->
     <div id="loginStatus" style="border: none; background-color: transparent; padding-top: 1%;">
+        <!--User instructions-->
         <br>Press "Submit" to login<br></div>
         <p>Please submit the following data for validation</p>
+        <!--returns false by default. Must submit valid data for a true return-->
         <form id="creditSubmit" onsubmit="return false">
             First Name: <input type="text" id="fName"><br>
             Last Name: <input type="text" id="lName"><br>
             Zip Code: <input type="text" id="zipCode"><br>
             <br>
+            <!--Submit button that runs the checkCreds script from the stringCode.js file-->
             <input type="Submit" onclick=" checkCreds();">
         </form>
         <br>
@@ -51,12 +55,16 @@
     </div>
     <h2>Palindrome Checker</h2>
     <div>
+        <!--Login status with specific styling for location on form-->
     <div id="palinStatus" style="border: none; background-color: transparent; padding-top: 1%;font-size: larger;"><br>Palindrone Status<br>
         <br></div>
+        <!--returns false by default. Must submit valid data for a true return-->
         <form id="palinSubmit" onsubmit="return false"></form>
         <br>
+        <!--User instructions-->
         <lable>Enter possible palindrome:</lable><input type="text" id="palinInput"><br>
         <br>
+        <!--Submit button that runs the checkPalin script from the stringCode.js file-->
         <input type="Submit" onclick="checkPalin();">
         <br>
         <br>

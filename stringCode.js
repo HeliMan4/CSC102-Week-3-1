@@ -15,11 +15,11 @@ function checkCreds() {
     firstName = document.getElementById("fName").value;
     console.log("The first name was inputted as " + firstName);
 
-    //working on inoutting last name
+    //working on inputting last name
     lastName = document.getElementById("lName").value;
     console.log("The last name was inputted as " + lastName);
 
-    //working on inoutting zip code
+    //working on inputting zip code
     zipCode = document.getElementById("zipCode").value;
     console.log("The zip code was inputted as " + zipCode);
 
