@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--This is for week three of CSC102
+    We will make an input validation form and a pallidrome checker
+    Brian Wimmer
+    bwimmer84895@uat.edu
+    23Oct2023-->
+
+<head>
+    <!--Link to Javascript file to enable functions-->
+    <script src="stringCode.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Validation</title>
+    <!--Link to CSS file-->
+    <link rel="stylesheet" href="stringsStyle.css">
+</head>
+
+<!--header will contain the navigation title and hyperlinks-->
+    <header>
+        <nav>
+            <h3>Navigation:</h3><br>
+            <ul class="navLinks">
+                <!--references to all four html files-->
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./boards.html">Boards</a></li>
+                <li><a href="./games.html">Game</a></li>
+                <li><a href="./strings.html">Strings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <!--Title of page visible to user-->
+    <h1>Welcome to My Strings.html Page</h1>
+    <!--Title of first section-->
+    <h2>Input Validation Section</h2>
+    <div id="loginStatus"><br>Press "Submit" to login<br>
+    <p>Please submit the following data for validation</p>
+    <form id="creditSubmit" onsubmit="return false">
+        <lable>First Name:</lable><input type="text" id="fName"><br>
+        <lable>Last Name:</lable><input type="text" id="lName"><br>
+        <lable>Zip Code:</lable><input type="text" id="zipCode"><br>
+        <br>
+        <input type="Submit" onclick="checkCreds();">
+        <br>
+        <br>
+    </div>
+        <h2>Palindrome Checker</h2>
+        <div id="palinStatus"><br>Palindrone Status<br>
+        <br>
+        <form id="palinSubmit" onsubmit="return false"></form>
+        <lable>Enter possible palindrome:</lable><input type="text" id="palinInput"><br>
+        <br>
+        <input type="Submit" onclick="checkPalin();">
+        <br>
+        <br>
+    </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    <!--Contact information-->
+    <footer style="margin-right: 5px;">University of Advancing Technology<br>
+        2625 W, Baseline Road<br>
+        Temp, AZ 85283-1056<br>
+        <br>
+        602-383-8228<br>
+
+    </footer>
+</body>
+
+</html>

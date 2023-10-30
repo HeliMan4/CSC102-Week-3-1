@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--This is for week two of CSC102
+    We will make a Craps game and create a CSS file to change its appearance
+    Brian Wimmer
+    bwimmer84895@uat.edu-->
+<head>
+    <!--link my js file to the html-->
+    <script src="gameCode.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--set the title for the page-->
+    <title>Games Page</title>
+
+</head>
+<header>
+    <nav>
+        <h3>Navigation:</h3><br>
+        <ul class="navLinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./boards.html">Boards</a></li>
+            <li><a href="./games.html">Game</a></li>
+            <li><a href="./strings.html">Strings</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <!--Links CSS file to HTML File-->
+    <link rel="stylesheet" href="game.css">
+    <!--Main title-->
+    <h1>Face the Army of Darkness</h1>
+    <!--Table 1 includes all six dice images and main poster-->
+    <table style="width: 100%">
+        <tr>
+            <!--Each "th" tag represents the cells in the first row of Table 1-->
+            <th  style="line-height: 50%;"><img width="100%" height="100%" src="Die 1.png" alt="1" class="dice"></th>
+            <!--"rowspan" merges the three cells in the second column of Table 1. I googled how to do this.-->
+            <th rowspan="3" style="background-color: black;"><img src="Army of Darkness.jpg" alt="Image" class="Poster"></th>
+            <th  style="line-height: 50%;"><img width="100%" height="100%" src="Die 4.png" alt="4" class="dice"></th>
+        </tr>
+        <tr>
+            <!--Second row of cells in Table 1-->
+            <th style="line-height: 50%;"><img width="100%" height="100%" src="Die 2.png" alt="2" class="dice"></th>
+            <th style="line-height: 50%;"><img width="100%" height="100%" src="Die 5.png" alt="5" class="dice"></th>
+        </tr>
+        <tr>
+            <!--Third row of cells in Table 1-->
+            <th style="line-height: 50%;"><img width="100%" height="100%" src="Die 3.png" alt="3" class="dice"></th>
+            <th style="line-height: 50%;"><img width="100%" height="100%" src="Die 6.png" alt="6" class="dice"></th>
+        </tr>
+    </table class="tableOne">
+    <!--Adds to the theme of the game-->
+    <h2>Prepare to battle the Army of Darkness! "This...is my BOOMSTICK!!!"</h2>
+    <!--Table 2 includes the game code results-->
+    <table class="tableTwo" width="100%">
+        <!--Cell dimensions that differ from CSS file-->
+        <tr height="50px">
+            <th width="20%">Die 1</th>
+            <th width="20%">Die 2</th>
+            <th width="20%">Sum</th>
+            <th width="40%">Result</th>
+        </tr>
+        <!--Game results-->
+        <tr height="80px">
+            <th>
+                <div id="die1Res">Press PLAY to start game</div>
+            </th>
+            <th>
+                <div id="die2Res">Press PLAY to start game</div>
+            </th>
+            <th>
+                <div id="sumRes">Press PLAY to start game</div>
+            </th>
+            <th>
+                <div id="gameRes">Press PLAY to start game</div>
+            </th>
+        </tr>
+
+    </table>
+    <br>
+    <!--Initiate gameCode.js-->
+    <button onclick="playCraps()">PLAY</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer style="margin-right: 5px;">University of Advancing Technology<br>
+        2625 W, Baseline Road<br>
+        Temp, AZ 85283-1056<br>
+        <br>
+        602-383-8228<br>
+
+    </footer>
+</body>
+
+</html>

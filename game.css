@@ -1,0 +1,126 @@
+html{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: black;
+}
+nav {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+    }
+    a:visited{
+        color: white;
+    }
+    .navLinks {
+        list-style: none;
+    }
+    .navLinks li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+ 
+    
+
+footer {
+    text-align: center;
+    margin-right: 200px;
+}
+header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-radius: 20px;
+        border-color:white;
+        background-color:  rgb(71, 28, 28);
+        border-width: 2px;
+        font-size: large;
+        height: 50px;
+        text-transform: uppercase;
+}
+body {
+    color: white;
+    font-size: medium;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-align: center;
+}
+
+img {
+    border-width: 5px;
+    border-radius: 15%;
+    border-color: #fafafa;
+    max-width: 60%;
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+    border: #fafafa;
+    border-style: solid;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(71, 28, 28);
+    
+}
+
+h2 {
+    text-align: center;
+    font-size: x-large;
+    line-height: 35px;
+    border: white;
+    border-style: solid;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgb(71, 28, 28);
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace, bold;
+    font-weight: bolder;
+    letter-spacing: 20px;
+    color: transparent;
+    background: rgb(71, 28, 28);
+    text-shadow: 0px 2px 1px rgb(255, 255, 255);
+    height: 80px;
+    width: 100%;
+    font-size: 75px;
+    line-height: 5px;
+    border: 3px;
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+div {
+    text-transform: uppercase;
+}
+
+table,
+th,
+tr {
+    border: white;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: rgb(71, 28, 28);
+}
+p{
+    border: solid white 2px;
+    border-radius: 20px;
+    background-color: rgb(71, 28, 28);
+    text-align: justify;
+    font-size: x-large;
+    padding-top: 2%;
+    padding-left:5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+
+}
+
