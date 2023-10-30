@@ -17,38 +17,44 @@
 </head>
 
 <!--header will contain the navigation title and hyperlinks-->
-    <header>
-        <nav>
-            <h3>Navigation:</h3><br>
-            <ul class="navLinks">
-                <!--references to all four html files-->
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./boards.html">Boards</a></li>
-                <li><a href="./games.html">Game</a></li>
-                <li><a href="./strings.html">Strings</a></li>
-            </ul>
-        </nav>
-    </header>
-    <body>
-        <!--Title of page visible to user-->
+<header>
+    <nav>
+        <h3>Navigation:</h3><br>
+        <ul class="navLinks">
+            <!--references to all four html files-->
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./boards.html">Boards</a></li>
+            <li><a href="./games.html">Game</a></li>
+            <li><a href="./strings.html">Strings</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <!--Title of page visible to user-->
     <h1>Welcome to My Strings.html Page</h1>
     <!--Title of first section-->
     <h2>Input Validation Section</h2>
-    <div id="loginStatus"><br>Press "Submit" to login<br>
-    <p>Please submit the following data for validation</p>
-    <form id="creditSubmit" onsubmit="return false">
-        <lable>First Name:</lable><input type="text" id="fName"><br>
-        <lable>Last Name:</lable><input type="text" id="lName"><br>
-        <lable>Zip Code:</lable><input type="text" id="zipCode"><br>
-        <br>
-        <input type="Submit" onclick="checkCreds();">
+    <div>
+    <div id="loginStatus" style="border: none; background-color: transparent; padding-top: 1%;">
+        <br>Press "Submit" to login<br></div>
+        <p>Please submit the following data for validation</p>
+        <form id="creditSubmit" onsubmit="return false">
+            First Name: <input type="text" id="fName"><br>
+            Last Name: <input type="text" id="lName"><br>
+            Zip Code: <input type="text" id="zipCode"><br>
+            <br>
+            <input type="Submit" onclick=" checkCreds();">
+        </form>
         <br>
         <br>
     </div>
-        <h2>Palindrome Checker</h2>
-        <div id="palinStatus"><br>Palindrone Status<br>
-        <br>
+    <h2>Palindrome Checker</h2>
+    <div>
+    <div id="palinStatus" style="border: none; background-color: transparent; padding-top: 1%;font-size: larger;"><br>Palindrone Status<br>
+        <br></div>
         <form id="palinSubmit" onsubmit="return false"></form>
+        <br>
         <lable>Enter possible palindrome:</lable><input type="text" id="palinInput"><br>
         <br>
         <input type="Submit" onclick="checkPalin();">

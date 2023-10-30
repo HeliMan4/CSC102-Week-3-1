@@ -11,7 +11,7 @@ function checkCreds() {
     var zipCodeNumb;
 
     //fill in the variables
-    //working on inoutting first name
+    //working on inputting first name
     firstName = document.getElementById("fName").value;
     console.log("The first name was inputted as " + firstName);
 
@@ -29,7 +29,7 @@ function checkCreds() {
     //working on inputting full name length
     fullNameLength = fullName.length;
     console.log("The full name has " + fullNameLength + " characters.");
-//working on inputting the zipcode as an integer
+    //working on inputting the zipcode as an integer
     zipCodeNumb = parseInt(zipCode);
     console.log("The zip code number is " + zipCodeNumb);
 
@@ -44,7 +44,7 @@ function checkCreds() {
     }
 }
 
-function checkPalin(){
+function checkPalin() {
     console.log("checkPalin started");
     //record the string into a variable
     var entStr;
@@ -63,8 +63,8 @@ function checkPalin(){
     console.log("string length is " + length);
 
     //input into array and reverse it
-    for(var i = length; i >= 0; i--){
-    revArray.push(entStrNoSpace[i]);
+    for (var i = length; i >= 0; i--) {
+        revArray.push(entStrNoSpace[i]);
     }
 
     //convert to a string from an array
@@ -72,14 +72,14 @@ function checkPalin(){
     console.log("reversed is " + revStr)
 
     //compare rev to string and write to status
-    var equal = 0;4
+    var equal = 0; 4
     equal = (entStrNoSpace === revStr);
     console.log("The ent and reversed being equal is: " + equal);
 
     //write to palindrome status
-    if(equal == true){
-        document.getElementById("palinStatus").innerHTML = entStr + " <b>is</b> a palindrome";
+    if (equal == true) {
+        document.getElementById("palinStatus").innerHTML = entStr + " <i>is</i> a palindrome";
     } else {
-        document.getElementById("palinStatus").innerHTML = entStr + " is <b>not</b> a palindrome";
+        document.getElementById("palinStatus").innerHTML = entStr + " is <i>not</i> a palindrome";
     }
 }
